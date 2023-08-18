@@ -1,0 +1,24 @@
+name=input("What is your name?")
+address=input("What is your address?")
+city=input("Where is your city?")
+state=input("Where is your State?")
+zipcode=input("What is your zipcode?")
+
+print('Your information is,\n' +name+ ',\n'+address+',\n'+city+',\n'+state+',\n'+zipcode+'\n')
+
+print('Hello I am selling; a chair, phone and a computer, would you like to purchase?')
+
+print('Do you want to buy these items.')
+
+Yes_no=input('Y for yes and N for no')
+
+
+chair_price=input('Name the price for the chair!')
+phone_price=input('Name the price for the phone!')
+computer_price=input('Name the price for the computer!')
+
+a1=int(chair_price)
+b1=int(phone_price)
+c1=int(computer_price)
+
+print('The total cost is ', a1+b1+c1) 
