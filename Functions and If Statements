@@ -1,0 +1,47 @@
+def initialpath():  #function that allows initial choice
+    if choice1 == 1:  #depending on what path you pick it is different
+        print(
+            'You built a makeshift bridge. It almost collapses, but you barely make it across.'
+        )
+    elif choice1 == 2:
+        print(
+            "Where did you get a helicopter? You fly across the gap easily but go a bit too far and your helicopter crashes into a tree. You survive with a few bruises."
+        )
+    elif choice1 == 3:
+        print(
+            "It's too far to jump, you fall into a river full of alligators.")
+
+
+def continuedpath():  #this is the function for the continuation of path 1
+    if Extension == 1:
+        print(
+            "You fight the stranger. It's a struggle, but you come out on top. He runs away, and you are free to continue your journey."
+        )
+    elif Extension == 2:
+        print(
+            "Why did you do that?? You hand over all your stuff, and he runs away with it. But in his haste, he drops a pot of GOLD! You're rich!"
+        )
+
+        #both extensions
+
+
+choice1 = int(
+    input(
+        "You are walking along a path when you come across a large gap with the bridge out. Do you build a makeshift bridge, hop in your helicopter, or jump?(type 1 to build a bridge 2 for the helicopter, and 3 for jumping.) "
+    ))
+initialpath()
+if choice1 == 1:
+    Extension = int(
+        input(
+            "After you cross the bridge, you come across a stranger, who suddenly pulls out a knife and tries to rob you. Do you fight or hand over your stuff? (1 to fight, 2 to give up your things) "
+        ))
+    continuedpath()
+
+#This extends the prompt on the first choice
+if choice1 < 1 or choice1 > 3:
+    print("\n not a valid choice")
+if choice1 == 1:
+    if Extension < 1 or Extension > 2:
+        print("\n not a valid choice")
+#these are error checking
+
