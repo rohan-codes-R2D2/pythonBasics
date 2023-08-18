@@ -1,0 +1,35 @@
+age = int(input("Plase enter your desired age: "))
+
+if age < 0 or age > 130:
+    print("\nNot a valid Age") 
+elif age < 5: 
+    print("You are too young to go to school")
+elif age == 5:
+    print("\nYou are in kindergarten.") 
+elif age == 6: 
+    print("\nYou are in 1st grade")
+elif age == 7:
+    print("\nYou are in 2nd grade")
+elif age == 8:
+    print("\nYou are in 3rd grade")
+elif age == 9:
+    print("\nYou are in 4th grade")
+elif age == 10:
+    print("\nYou are in 5th grade")
+elif age == 11:
+    print("\nYou are in 6th grade")
+elif age == 12:
+    print("\nYou are in 7th grade")
+elif age == 13:
+    print("\nYou are in 8th grade")
+elif age == 14:
+    print("\nYou are in 9th grade")
+elif age == 15:
+    print("\nYou are in 10th grade")
+elif age == 16:
+    print("\nYou are in 11th grade")
+elif age == 17:
+    print("You are in 12th grade")
+else:
+    print("You are too old to be in school!")
+
