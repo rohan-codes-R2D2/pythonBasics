@@ -1,0 +1,68 @@
+def tipcalc():
+  print('Hello, how are you?')  # the food prices
+  print('I am selling 5 food items today')
+  Chicken = input(
+      'What is the price for chicken?')  # each one asks the price for the food
+  Rice = input('What is the price for Rice?')
+  Salad = input('What is the price for Salad?')
+  Apple = input('What is the price for Apple?')
+  Banana = input('What is the price for banana?')
+  
+  C1 = int(Chicken)  #turns the input into integers to be added together
+  R1 = int(Rice)
+  S1 = int(Salad)
+  A1 = int(Apple)
+  B1 = int(Banana)
+  Subtotal = int(C1 + R1 + S1 + A1 + B1)  #adding together the integers
+  print('The Subtotal is', Subtotal)  #the subtotal price
+  
+  Tax = float(1.07)  #tax
+  
+  Taxprice = float(Subtotal * Tax)  #Adding tax
+  
+  print('The price with Tax is', Taxprice)  #tax plus subtotal price
+  
+  Tax_itself = float(Taxprice - Subtotal)#showing the tax price
+  
+  print('The tax added on is',Tax_itself)
+  
+  print('Would you like to give a tip?')
+  
+  Tip = input('If so what tip would you like to give?')
+  
+  T1 = float(Tip)  #adding the tip number
+  
+  Sub_tip = float(T1 / Subtotal)  # adds a tip percentage
+  print('This is the percentage of tip', Sub_tip)
+  
+  Final_price = float(T1 + Taxprice)
+  
+  print('Your final price with Tips and taxes is',
+      Final_price)  #This outputs the final price.
+  if C1 > R1 and S1 and A1 and B1:
+    print('The most expensive is Chicken')
+  elif R1 > C1 and S1 and A1 and B1:
+    print('The most expensive is Rice')
+  elif S1 > C1 and R1 and A1 and B1:
+    print('The most expensive is Salad')
+  elif A1 > C1 and R1 and S1 and B1:
+    print('The most expensive is Apple')
+  elif B1 > C1 and R1 and S1 and A1:
+    print('The most expensive is Banana')
+  else:
+    print('Error')
+  rerun=float(input("Do you wish for the program to repeat, If so enter 1, If not enter 2: "))
+  if rerun==2:
+    print("Thank you for ordering")
+  if rerun==1:
+    tipcalc()
+  else:
+    print('Error')
+tipcalc()
+
+
+
+
+  
+
+
