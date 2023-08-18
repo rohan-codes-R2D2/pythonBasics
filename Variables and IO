@@ -1,0 +1,7 @@
+name=input("What is your name?")
+address=input("What is your address")
+city=input("Where is your city?")
+state=input("Where is your State?")
+zipcode=input("What is your zipcode?")
+
+print('Your name is' + name +'.')
