@@ -1,0 +1,9 @@
+# Using a for loop
+my_list = []
+for i in range(10):
+    my_list.append(i)
+print(my_list)
+
+# Using a list comprehension
+my_list = [i for i in range(10)]
+print(my_list)
