@@ -1,0 +1,22 @@
+def rupeesToDollars(rupees): #The rupees are parameterized 
+    dollars = rupees/70 #70 rupees per $
+    return dollars
+
+# this statement returns the value in dollars
+rupees = int(input("Enter the number of rupees: ")) #allows you to input value
+dollars = rupeesToDollars(rupees) #dolllar calculation
+
+print("The number of dollar(s):", dollars)
+
+
+#Below is project #2
+
+#This is the day to minutes activity
+def daysToMinutes(day):
+    minutes = day*24*60#allows you to calculate Minutes to Days 
+    return minutes
+#returns the value in minutes
+day = int(input("Enter the number of days: "))
+minutes = daysToMinutes(day)
+
+print("The number of minutes in", day, "day(s) is:", minutes)
