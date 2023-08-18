@@ -1,0 +1,15 @@
+numbers = []
+while True:
+    number = int(input("Please input a number: "))
+    if number >= 0:
+        numbers.append(number)
+    else:
+        break
+print(numbers)
+'''
+- This code will prompt the user to input numbers until a negative number is entered. The program will then print the list of non-negative numbers that were entered.
+- Note that the while True: loop creates an endless loop that will continue until the break statement is executed. 
+- The input() function is used to prompt the user to input a number, which is then converted to an integer using the int() function. 
+- The if statement checks if the number is non-negative, and if so, it is appended to the numbers list using the append() method. 
+- If the number is negative, the break statement is executed, which exits the loop. Finally, the program prints the list of non-negative numbers that were entered.
+'''
