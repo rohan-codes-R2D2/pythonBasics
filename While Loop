@@ -1,0 +1,24 @@
+x = int(input("Enter the number: "))
+print("All the squares are:")
+number = 1
+while number <= x:
+    print(number**2)
+    number += 1
+sqr1 = 2
+print("All the even squares are :")
+while sqr1 <= number:
+    print(sqr1 * sqr1)
+    sqr1 += 2
+
+#Activity two begins here
+
+inputNum = int(input("Enter an integer: "))
+num = 1
+sqr2 = num**2
+if inputNum<0:
+  inputNum=inputNum*-1
+while num**2 <= inputNum:
+  print(num**2)
+  num += 1
+
+
